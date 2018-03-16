@@ -1,16 +1,16 @@
-# Quickly start a project by wx-skeleton
+# Quickly start a project by wx-skeleton :cake::cake::cake:
 # Usage
 ```bash
 $ pip install pipenv
 $ pipenv install 
 $ pipenv shell
-$ pipenv install wx-skeleton
+(venv)$ pipenv install wx-skeleton
 (venv)$ mkskl.py new_project
 Successfully run build_skeleton for new_project
 Successfully build project new_project!
 ```
 
-# [Start a project the right way?](https://raw.githubusercontent.com/WangXin93/My_python_demo/master/skeleton/mkskl.py)
+# Start a project the right way?[(reference)](https://raw.githubusercontent.com/WangXin93/My_python_demo/master/skeleton/mkskl.py)
 
 What this script can make is a project directory like that:
 ```bash
@@ -42,3 +42,6 @@ The building process follow this process:
 - [x] Add first to setup_tests.py
 - [x] touch root/.gitignore and add default contents
 - [x] touch README.md
+
+# How to distribute and publish python project?
+<https://docs.djangoproject.com/en/2.0/intro/reusable-apps/>
