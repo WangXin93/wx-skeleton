@@ -20,15 +20,15 @@ proj
 
 The building process follow this path:
 
-[x]Make directory for the root
-[x]Make directory with project_name
-[x]Make directory bin
-[x]Make directory docs
-[x]Make directory tests
-[x]touch root/project_name/__init__.py
-[x]touch tests/__init__.py
-[x]touch root/setup.py
-[x]touch tests/setup_tests.py
-[x]Add first to setup_tests.py
-[x]touch root/.gitignore and add default contents
-[x]touch README.md
+[x] Make directory for the root
+[x] Make directory with project_name
+[x] Make directory bin
+[x] Make directory docs
+[x] Make directory tests
+[x] touch root/project_name/__init__.py
+[x] touch tests/__init__.py
+[x] touch root/setup.py
+[x] touch tests/setup_tests.py
+[x] Add first to setup_tests.py
+[x] touch root/.gitignore and add default contents
+[x] touch README.md
