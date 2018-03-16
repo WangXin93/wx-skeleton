@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 import sys
 import os
+import shutil
+
+gitignore_path = os.path.join(os.path.dirname(os.path.abspath((__file__))),
+                              '.gitignore')
 
 def touch(path):
     '''Create a file if it doesn't exist, otherwise update its mtime
@@ -16,6 +20,7 @@ def touch(path):
     with open(path, 'a'):
         # Update mtime in case file exists
         os.utime(path, None)
+
 
 def build_skeleton(project):
     # Assume project is string like "d1/a1"
@@ -49,19 +54,12 @@ def setup_tests():
     with open(os.path.join(project, "tests", "setup_tests.py"), "w") as f:
         f.write(setup_tests)
 
-    # touch d1/a1/.gitignore
-    touch(os.path.join(project, '.gitignore'))
-    ignore_contents = """*.pyc
-__pychche__
-"""
-    with open(os.path.join(project, '.gitignore'), 'w') as f:
-        f.write(ignore_contents)
+    # Add .gitignore from skutils package path
+    shutil.copy(gitignore_path, os.path.join(project, '.gitignore'))
 
     # touch d1/a1/README.md
     touch(os.path.join(project, 'README.md'))
     # Print done.
-    print(project + " SETUP done!")
+    print("Successfully run build_skeleton for %s" % project)
 
-if __name__ == "__main__": 
-    build_skeleton(sys.argv[1])
 

@@ -23,6 +23,7 @@ def touch_tests():
     with assert_raises(IOError) as cm:
         touch(path)
 
+
 def build_skeleton_tests():
     build_skeleton('./test_skeleton')
     assert_equal((os.path.exists('./test_skeleton')), True)
