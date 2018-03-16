@@ -31,15 +31,16 @@ proj
 The building process follow this process:
 
 - [x] Make directory for the root
-- [x] Make directory with project_name
-- [x] Make directory bin
-- [x] Make directory docs
-- [x] Make directory tests
+- [x] Make directory with root/project_name
+- [x] Make directory root/bin
+- [x] Make directory root/docs
+- [x] Make directory root/tests
 - [x] touch root/project_name/__init__.py
-- [x] touch tests/__init__.py
+- [x] touch root/tests/__init__.py
+- [x] touch root/bin/__init__.py
 - [x] touch root/setup.py
-- [x] touch tests/setup_tests.py
-- [x] Add first to setup_tests.py
+- [x] touch root/tests/setup_tests.py
+- [x] Add first test to setup_tests.py
 - [x] touch root/.gitignore and add default contents
 - [x] touch README.md
 

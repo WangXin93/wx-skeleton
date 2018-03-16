@@ -2,7 +2,7 @@ import setuptools
 
 config = {
     'name':'wx-skeleton',
-    'version':'0.1',
+    'version':'0.2',
     'packages':setuptools.find_packages(exclude=['tests', 'docs']),
     'entry_points':{
         'console_scripts': [

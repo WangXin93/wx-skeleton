@@ -43,6 +43,8 @@ def build_skeleton(project):
     touch(os.path.join(project, project_name, "__init__.py"))
     # touch d1/a1/tests/__init__.py
     touch(os.path.join(project, "tests", "__init__.py"))
+    # touch d1/a1/bin/__init__.py
+    touch(os.path.join(project, "bin", "__init__.py"))
     # touch d1/a1/setup.py
     touch(os.path.join(project, "setup.py"))
     # touch d1/a1/tests/setup_tests.py
