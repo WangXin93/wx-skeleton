@@ -1,5 +1,5 @@
 from nose.tools import *
-from wx_skeleton.skutils import *
+from wxskeleton.skutils import *
 import os
 import shutil
 
