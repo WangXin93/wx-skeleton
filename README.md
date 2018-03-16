@@ -1,16 +1,26 @@
+# Quickly start a project by wx-skeleton
 # Usage
+```bash
+$ pip install pipenv
+$ pipenv install 
+$ pipenv shell
+$ pipenv install wx-skeleton
+(venv)$ mkskl.py new_project
+Successfully run build_skeleton for new_project
+Successfully build project new_project!
+```
 
 # [Start a project the right way?](https://raw.githubusercontent.com/WangXin93/My_python_demo/master/skeleton/mkskl.py)
 
 What this script can make is a project directory like that:
 ```bash
-$ tree -a ~/proj
+$ tree -a ~/new_project
 proj
 ├── .gitignore
 ├── README.md
 ├── bin
 ├── docs
-├── proj
+├── new_project
 │   └── __init__.py
 ├── setup.py
 └── tests
