@@ -16,6 +16,7 @@ def touch(path):
     Raises:
         IOError: If base directory of `path` doesn't exist
         AssertionError: The `path` can't be empty
+
     '''
     assert path, "path can't be empty"
     path = os.path.expanduser(path)
