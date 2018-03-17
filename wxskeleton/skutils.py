@@ -10,10 +10,12 @@ def touch(path):
     '''Create a file if it doesn't exist, otherwise update its mtime
     
     Args:
-        path: string, path of file to be touched
+        path(str): Path of file to be touched, if path already exists,
+            `touch` will update its mtime.
 
-    raise:
-        NameError: if base directory doesn't exist
+    Raises:
+        IOError: If base directory of `path` doesn't exist
+        AssertionError: The `path` can't be empty
     '''
     assert path, "path can't be empty"
     path = os.path.expanduser(path)
@@ -23,6 +25,15 @@ def touch(path):
 
 
 def build_skeleton(project):
+    '''Build project directory skeleton on the target path
+
+    Args:
+        project(str): Name of project, is also the root of the project
+
+    Raises:
+        AssertionError: The project root can't already exist.
+
+    '''
     # Assume project is string like "d1/a1"
     assert not os.path.exists(project), "Project path already exists"
     # Get base directory "d1"
