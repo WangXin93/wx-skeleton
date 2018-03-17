@@ -19,6 +19,7 @@ proj
 ├── .gitignore
 ├── README.md
 ├── bin
+|   └── __init__.py
 ├── docs
 ├── new_project
 │   └── __init__.py
