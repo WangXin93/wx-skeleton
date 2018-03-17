@@ -15,7 +15,7 @@ Successfully build project new_project!
 What this script can make is a project directory like that:
 ```bash
 $ tree -a ~/new_project
-proj
+new_project
 ├── .gitignore
 ├── README.md
 ├── bin
